@@ -31,6 +31,9 @@ class KlarnaServiceProvider extends ServiceProvider
             __DIR__.'/../config/klarna.php' => config_path('klarna.php'),
         ], 'config');
 
+        $this->publishesMigrations([
+            __DIR__.'/../database/migrations' => database_path('migrations'),
+        ]);
         // Optionally load routes, views, etc. if needed for your package
         // $this->loadRoutesFrom(__DIR__.'/../routes/web.php');
         // $this->loadViewsFrom(__DIR__.'/../resources/views', 'klarna');
