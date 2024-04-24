@@ -1,0 +1,24 @@
+{
+    "name": "caesardev/laravel-klarna-payments",
+    "description": "This package provides seamless integration between your Laravel application and Klarna Payments, allowing you to easily implement Klarna's payment solutions.",
+    "license": "MIT",
+    "autoload": {
+        "psr-4": {
+            "Caesardev\\LaravelKlarnaPayments\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "Ola Ebbesson"
+        }
+    ],
+    "minimum-stability": "dev",
+    "require": {},
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Caesardev\\Providers\\KlarnaServiceProvider"
+            ]
+        }
+    }
+}
